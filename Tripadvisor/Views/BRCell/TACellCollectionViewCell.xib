@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TACellCollectionViewCell" customModule="Tripadvisor" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="555" height="592"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="555" height="592"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uiV-au-uwM">
+                        <rect key="frame" x="0.0" y="0.0" width="555" height="592"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lBH-Vy-0n6">
+                                <rect key="frame" x="0.0" y="0.0" width="555" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="k8N-nC-ZzK"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PYn-wp-Pxn">
+                                <rect key="frame" x="10" y="165" width="535" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l6u-jV-o2k">
+                                <rect key="frame" x="10" y="190.5" width="535" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="lBH-Vy-0n6" secondAttribute="trailing" id="3cj-dD-NQv"/>
+                            <constraint firstItem="PYn-wp-Pxn" firstAttribute="leading" secondItem="uiV-au-uwM" secondAttribute="leading" constant="10" id="4JZ-cn-lsG"/>
+                            <constraint firstItem="l6u-jV-o2k" firstAttribute="leading" secondItem="uiV-au-uwM" secondAttribute="leading" constant="10" id="Fwb-xv-6mW"/>
+                            <constraint firstAttribute="trailing" secondItem="PYn-wp-Pxn" secondAttribute="trailing" constant="10" id="GVA-EF-ZM5"/>
+                            <constraint firstItem="lBH-Vy-0n6" firstAttribute="top" secondItem="uiV-au-uwM" secondAttribute="top" id="Zlw-6E-qhn"/>
+                            <constraint firstItem="lBH-Vy-0n6" firstAttribute="leading" secondItem="uiV-au-uwM" secondAttribute="leading" id="ckD-q5-q2k"/>
+                            <constraint firstItem="l6u-jV-o2k" firstAttribute="top" secondItem="PYn-wp-Pxn" secondAttribute="bottom" constant="5" id="e6o-Kf-vDG"/>
+                            <constraint firstAttribute="trailing" secondItem="l6u-jV-o2k" secondAttribute="trailing" constant="10" id="jje-jl-3hR"/>
+                            <constraint firstItem="PYn-wp-Pxn" firstAttribute="top" secondItem="lBH-Vy-0n6" secondAttribute="bottom" constant="15" id="yoT-k1-Bze"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="uiV-au-uwM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="4rV-wQ-PhR"/>
+                <constraint firstAttribute="bottom" secondItem="uiV-au-uwM" secondAttribute="bottom" id="ODC-DA-4Ce"/>
+                <constraint firstItem="uiV-au-uwM" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="i5L-oa-KkZ"/>
+                <constraint firstAttribute="trailing" secondItem="uiV-au-uwM" secondAttribute="trailing" id="iTy-Pq-zwW"/>
+            </constraints>
+            <size key="customSize" width="463" height="194"/>
+            <connections>
+                <outlet property="bgView" destination="uiV-au-uwM" id="rKj-wY-xpM"/>
+                <outlet property="category" destination="l6u-jV-o2k" id="bPe-d4-5Yd"/>
+                <outlet property="imageView" destination="lBH-Vy-0n6" id="XNp-pR-evc"/>
+                <outlet property="name" destination="PYn-wp-Pxn" id="WFV-0D-nDN"/>
+            </connections>
+            <point key="canvasLocation" x="-1168.840579710145" y="-54.241071428571423"/>
+        </collectionViewCell>
+    </objects>
+</document>

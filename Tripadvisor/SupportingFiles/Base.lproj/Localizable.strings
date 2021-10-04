@@ -1,0 +1,11 @@
+/* 
+  Localiable.strings
+  BottleRocket
+
+  Created by Yulia on 01.10.2021.
+  
+*/
+
+"category" = "Category: ";
+"address" = "Address: ";
+"phone_number" = "Phone number: ";

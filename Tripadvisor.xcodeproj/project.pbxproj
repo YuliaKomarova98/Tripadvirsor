@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B256DCAE26FB477100C5B831 /* TARestaurantPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B256DCAD26FB477100C5B831 /* TARestaurantPresenter.swift */; };
+		B26CB5132701BA0B00934AAF /* TAInfoRestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26CB5122701BA0B00934AAF /* TAInfoRestaurantViewController.swift */; };
+		B2A44911270A09FB0001E1C0 /* TAPresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A44910270A09FB0001E1C0 /* TAPresenterDelegate.swift */; };
+		B2AEAA9126FCA05800A280C0 /* TAConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AEAA9026FCA05800A280C0 /* TAConstants.swift */; };
+		B2BDC5A427045A7200834D25 /* TACustomLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BDC5A327045A7200834D25 /* TACustomLayout.swift */; };
+		B2D2ECE726F08FFD00E7B960 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D2ECE626F08FFD00E7B960 /* AppDelegate.swift */; };
+		B2D2ECE926F08FFD00E7B960 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D2ECE826F08FFD00E7B960 /* SceneDelegate.swift */; };
+		B2D2ECF026F08FFD00E7B960 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2D2ECEF26F08FFD00E7B960 /* Assets.xcassets */; };
+		B2D2ECF326F08FFD00E7B960 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2D2ECF126F08FFD00E7B960 /* LaunchScreen.storyboard */; };
+		B2D2ECFE26F0916500E7B960 /* TAInternetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D2ECFD26F0916500E7B960 /* TAInternetsViewController.swift */; };
+		B2D2ED0326F0954F00E7B960 /* TALunchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D2ED0226F0954F00E7B960 /* TALunchModel.swift */; };
+		B2D2ED0526F0976900E7B960 /* TANetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D2ED0426F0976900E7B960 /* TANetworkManager.swift */; };
+		B2D2ED1726F11E8700E7B960 /* TACellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D2ED1526F11E8700E7B960 /* TACellCollectionViewCell.swift */; };
+		B2D2ED1826F11E8700E7B960 /* TACellCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2D2ED1626F11E8700E7B960 /* TACellCollectionViewCell.xib */; };
+		B2D4CC9C2705A74400EF83BD /* TARestaurantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D4CC9B2705A74400EF83BD /* TARestaurantsViewController.swift */; };
+		B2D4CCA12706F4C000EF83BD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B2D4CC9F2706F4C000EF83BD /* Localizable.strings */; };
+		B2E5B27C26FDD8920021F09F /* TAImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E5B27B26FDD8920021F09F /* TAImageManager.swift */; };
+		B2F5F360270A029A00AB3D04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2D2ECEC26F08FFD00E7B960 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B256DCAD26FB477100C5B831 /* TARestaurantPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TARestaurantPresenter.swift; sourceTree = "<group>"; };
+		B26CB5122701BA0B00934AAF /* TAInfoRestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAInfoRestaurantViewController.swift; sourceTree = "<group>"; };
+		B2A44910270A09FB0001E1C0 /* TAPresenterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAPresenterDelegate.swift; sourceTree = "<group>"; };
+		B2A44912270A0DA20001E1C0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B2AEAA9026FCA05800A280C0 /* TAConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAConstants.swift; sourceTree = "<group>"; };
+		B2BDC5A327045A7200834D25 /* TACustomLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TACustomLayout.swift; sourceTree = "<group>"; };
+		B2D2ECE326F08FFD00E7B960 /* Tripadvisor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tripadvisor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2D2ECE626F08FFD00E7B960 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B2D2ECE826F08FFD00E7B960 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B2D2ECED26F08FFD00E7B960 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B2D2ECEF26F08FFD00E7B960 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B2D2ECF226F08FFD00E7B960 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B2D2ECF426F08FFD00E7B960 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2D2ECFD26F0916500E7B960 /* TAInternetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAInternetsViewController.swift; sourceTree = "<group>"; };
+		B2D2ED0226F0954F00E7B960 /* TALunchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TALunchModel.swift; sourceTree = "<group>"; };
+		B2D2ED0426F0976900E7B960 /* TANetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TANetworkManager.swift; sourceTree = "<group>"; };
+		B2D2ED1526F11E8700E7B960 /* TACellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TACellCollectionViewCell.swift; sourceTree = "<group>"; };
+		B2D2ED1626F11E8700E7B960 /* TACellCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TACellCollectionViewCell.xib; sourceTree = "<group>"; };
+		B2D4CC9B2705A74400EF83BD /* TARestaurantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TARestaurantsViewController.swift; sourceTree = "<group>"; };
+		B2D4CC9D2706F3EF00EF83BD /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		B2D4CC9E2706F3EF00EF83BD /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		B2D4CCA02706F4C000EF83BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B2D4CCA22706F4E700EF83BD /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B2E5B27B26FDD8920021F09F /* TAImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAImageManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B2D2ECE026F08FFD00E7B960 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B2D2ECDA26F08FFD00E7B960 = {
+			isa = PBXGroup;
+			children = (
+				B2D2ECE526F08FFD00E7B960 /* Tripadvisor */,
+				B2D2ECE426F08FFD00E7B960 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B2D2ECE426F08FFD00E7B960 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B2D2ECE326F08FFD00E7B960 /* Tripadvisor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B2D2ECE526F08FFD00E7B960 /* Tripadvisor */ = {
+			isa = PBXGroup;
+			children = (
+				B2D2ED0626F0983600E7B960 /* Networking */,
+				B2D2ED0126F0950E00E7B960 /* Presenters */,
+				B2D2ED0026F0950500E7B960 /* Models */,
+				B2D2ECFF26F0947D00E7B960 /* Views */,
+				B2D2ECF426F08FFD00E7B960 /* Info.plist */,
+				B2AEAA9026FCA05800A280C0 /* TAConstants.swift */,
+				B2D2ECFA26F0904C00E7B960 /* SupportingFiles */,
+			);
+			path = Tripadvisor;
+			sourceTree = "<group>";
+		};
+		B2D2ECFA26F0904C00E7B960 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				B2D2ECE626F08FFD00E7B960 /* AppDelegate.swift */,
+				B2D2ECE826F08FFD00E7B960 /* SceneDelegate.swift */,
+				B2D2ECEF26F08FFD00E7B960 /* Assets.xcassets */,
+				B2D2ECF126F08FFD00E7B960 /* LaunchScreen.storyboard */,
+				B2D4CC9F2706F4C000EF83BD /* Localizable.strings */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		B2D2ECFF26F0947D00E7B960 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B2D2ECEC26F08FFD00E7B960 /* Main.storyboard */,
+				B26CB5122701BA0B00934AAF /* TAInfoRestaurantViewController.swift */,
+				B2D4CC9B2705A74400EF83BD /* TARestaurantsViewController.swift */,
+				B2BDC5A327045A7200834D25 /* TACustomLayout.swift */,
+				B2D2ECFD26F0916500E7B960 /* TAInternetsViewController.swift */,
+				B2D2ED1926F11F5900E7B960 /* BRCell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B2D2ED0026F0950500E7B960 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B2D2ED0226F0954F00E7B960 /* TALunchModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B2D2ED0126F0950E00E7B960 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				B256DCAD26FB477100C5B831 /* TARestaurantPresenter.swift */,
+				B2A44910270A09FB0001E1C0 /* TAPresenterDelegate.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		B2D2ED0626F0983600E7B960 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B2D2ED0726F0984D00E7B960 /* Manager */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		B2D2ED0726F0984D00E7B960 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				B2D2ED0426F0976900E7B960 /* TANetworkManager.swift */,
+				B2E5B27B26FDD8920021F09F /* TAImageManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		B2D2ED1926F11F5900E7B960 /* BRCell */ = {
+			isa = PBXGroup;
+			children = (
+				B2D2ED1526F11E8700E7B960 /* TACellCollectionViewCell.swift */,
+				B2D2ED1626F11E8700E7B960 /* TACellCollectionViewCell.xib */,
+			);
+			path = BRCell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B2D2ECE226F08FFD00E7B960 /* Tripadvisor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2D2ECF726F08FFD00E7B960 /* Build configuration list for PBXNativeTarget "Tripadvisor" */;
+			buildPhases = (
+				B2D2ECDF26F08FFD00E7B960 /* Sources */,
+				B2D2ECE026F08FFD00E7B960 /* Frameworks */,
+				B2D2ECE126F08FFD00E7B960 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tripadvisor;
+			productName = BottleRocket;
+			productReference = B2D2ECE326F08FFD00E7B960 /* Tripadvisor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B2D2ECDB26F08FFD00E7B960 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					B2D2ECE226F08FFD00E7B960 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = B2D2ECDE26F08FFD00E7B960 /* Build configuration list for PBXProject "Tripadvisor" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ru,
+			);
+			mainGroup = B2D2ECDA26F08FFD00E7B960;
+			productRefGroup = B2D2ECE426F08FFD00E7B960 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B2D2ECE226F08FFD00E7B960 /* Tripadvisor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B2D2ECE126F08FFD00E7B960 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2D4CCA12706F4C000EF83BD /* Localizable.strings in Resources */,
+				B2F5F360270A029A00AB3D04 /* Main.storyboard in Resources */,
+				B2D2ED1826F11E8700E7B960 /* TACellCollectionViewCell.xib in Resources */,
+				B2D2ECF326F08FFD00E7B960 /* LaunchScreen.storyboard in Resources */,
+				B2D2ECF026F08FFD00E7B960 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B2D2ECDF26F08FFD00E7B960 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2D2ED0526F0976900E7B960 /* TANetworkManager.swift in Sources */,
+				B2D2ECFE26F0916500E7B960 /* TAInternetsViewController.swift in Sources */,
+				B2D4CC9C2705A74400EF83BD /* TARestaurantsViewController.swift in Sources */,
+				B2AEAA9126FCA05800A280C0 /* TAConstants.swift in Sources */,
+				B256DCAE26FB477100C5B831 /* TARestaurantPresenter.swift in Sources */,
+				B2D2ED0326F0954F00E7B960 /* TALunchModel.swift in Sources */,
+				B2D2ED1726F11E8700E7B960 /* TACellCollectionViewCell.swift in Sources */,
+				B2D2ECE726F08FFD00E7B960 /* AppDelegate.swift in Sources */,
+				B2A44911270A09FB0001E1C0 /* TAPresenterDelegate.swift in Sources */,
+				B2D2ECE926F08FFD00E7B960 /* SceneDelegate.swift in Sources */,
+				B2E5B27C26FDD8920021F09F /* TAImageManager.swift in Sources */,
+				B2BDC5A427045A7200834D25 /* TACustomLayout.swift in Sources */,
+				B26CB5132701BA0B00934AAF /* TAInfoRestaurantViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B2D2ECEC26F08FFD00E7B960 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2D2ECED26F08FFD00E7B960 /* Base */,
+				B2D4CC9D2706F3EF00EF83BD /* ru */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B2D2ECF126F08FFD00E7B960 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2D2ECF226F08FFD00E7B960 /* Base */,
+				B2D4CC9E2706F3EF00EF83BD /* ru */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B2D4CC9F2706F4C000EF83BD /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2D4CCA02706F4C000EF83BD /* Base */,
+				B2D4CCA22706F4E700EF83BD /* ru */,
+				B2A44912270A0DA20001E1C0 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B2D2ECF526F08FFD00E7B960 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B2D2ECF626F08FFD00E7B960 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B2D2ECF826F08FFD00E7B960 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XH48XVAWLU;
+				INFOPLIST_FILE = Tripadvisor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Yulia.Tripadvisor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B2D2ECF926F08FFD00E7B960 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XH48XVAWLU;
+				INFOPLIST_FILE = Tripadvisor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Yulia.Tripadvisor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B2D2ECDE26F08FFD00E7B960 /* Build configuration list for PBXProject "Tripadvisor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2D2ECF526F08FFD00E7B960 /* Debug */,
+				B2D2ECF626F08FFD00E7B960 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2D2ECF726F08FFD00E7B960 /* Build configuration list for PBXNativeTarget "Tripadvisor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2D2ECF826F08FFD00E7B960 /* Debug */,
+				B2D2ECF926F08FFD00E7B960 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B2D2ECDB26F08FFD00E7B960 /* Project object */;
+}
